@@ -1,0 +1,39 @@
+@model GameGaru.Models.Jugador
+
+<h2>Registro GameGaru</h2>
+
+<form asp-action="Registrar" method="post">
+
+<label>Nombre del jugador</label>
+<br>
+<input asp-for="Nombre" />
+<br><br>
+
+<label>Fecha de nacimiento</label>
+<br>
+<input asp-for="FechaNacimiento" type="date"/>
+<br><br>
+
+<label>Hobbies</label>
+<br>
+<input asp-for="Hobbies" />
+<br><br>
+
+<h3>Matrícula GameGaru</h3>
+<p>Monto de inscripción: <b>S/50</b></p>
+
+<label>
+    <input asp-for="PagoMatricula" type="checkbox" />
+    Confirmo que realicé el pago de la matrícula
+</label>
+
+<br><br>
+
+<button type="submit">Registrarse</button>
+
+</form>
+
+@if(ViewBag.Mensaje != null)
+{
+    <h3>@ViewBag.Mensaje</h3>
+}

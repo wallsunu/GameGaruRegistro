@@ -21,7 +21,7 @@ Este sistema permite registrar jugadores en la plataforma **GameGaru** y verific
   - Nombre del jugador
   - Fecha de nacimiento
   - Hobbies
-  - Monto de matrícula pagado
+  - Confirmar si ha pagado el monto de matrícula
 
 ## Autor
 Proyecto desarrollado como parte del curso **Programación I**.
